@@ -21,16 +21,16 @@ def middle_change(img):
     difference_a4 =abs(a4[0]-middle_average_R) + abs(a4[1] - middle_average_G) + abs(a4[2] - middle_average_B)
 
     if difference_a1 >= difference_a2 and difference_a1 >= difference_a3 and difference_a1 >= difference_a4:
-        return [16,16,middle_average_R,middle_average_G,middle_average_B]
+        return [15,15,middle_average_R,middle_average_G,middle_average_B]
         
     if difference_a2 >= difference_a1 and difference_a2 >= difference_a3 and difference_a2 >= difference_a4:
-        return [16,17,middle_average_R,middle_average_G,middle_average_B]
+        return [15,16,middle_average_R,middle_average_G,middle_average_B]
         
     if difference_a3 >= difference_a1 and difference_a3 >= difference_a2 and difference_a3 >= difference_a4:
-        return [17,16,middle_average_R,middle_average_G,middle_average_B] 
+        return [16,15,middle_average_R,middle_average_G,middle_average_B] 
         
     if difference_a4 >= difference_a1 and difference_a4 >= difference_a2 and difference_a4 >= difference_a3:
-        return [17,17,middle_average_R,middle_average_G,middle_average_B]  
+        return [16,16,middle_average_R,middle_average_G,middle_average_B]  
         
 
 
@@ -54,16 +54,16 @@ def middle_change_alter(img):
     difference_a4 =abs(a4[0]-middle_average_R) + abs(a4[1] - middle_average_G) + abs(a4[2] - middle_average_B)
 
     if difference_a1 >= difference_a2 and difference_a1 >= difference_a3 and difference_a1 >= difference_a4:
-        return [16,16,255-middle_average_R,255-middle_average_G,255-middle_average_B]
+        return [15,15,255-middle_average_R,255-middle_average_G,255-middle_average_B]
         # print('a1')
     if difference_a2 >= difference_a1 and difference_a2 >= difference_a3 and difference_a2 >= difference_a4:
-        return [16,17,255-middle_average_R,255-middle_average_G,255-middle_average_B]
+        return [15,16,255-middle_average_R,255-middle_average_G,255-middle_average_B]
         # print('a2') 
     if difference_a3 >= difference_a1 and difference_a3 >= difference_a2 and difference_a3 >= difference_a4:
-        return [17,16,255-middle_average_R,255-middle_average_G,255-middle_average_B] 
+        return [16,15,255-middle_average_R,255-middle_average_G,255-middle_average_B] 
         # print('a3')
     if difference_a4 >= difference_a1 and difference_a4 >= difference_a2 and difference_a4 >= difference_a3:
-        return [17,17,255-middle_average_R,255-middle_average_G,255-middle_average_B]  
+        return [16,16,255-middle_average_R,255-middle_average_G,255-middle_average_B]  
         # print('a4')
 
 def another_middle_change(img):
@@ -93,16 +93,16 @@ def another_middle_change(img):
     difference_a4 =abs(a4[0]-average_R) + abs(a4[1] - average_G) + abs(a4[2] - average_B)
 
     if difference_a1 >= difference_a2 and difference_a1 >= difference_a3 and difference_a1 >= difference_a4:
-        return [16,16,average_R,average_G,average_B]
+        return [15,15,average_R,average_G,average_B]
         
     if difference_a2 >= difference_a1 and difference_a2 >= difference_a3 and difference_a2 >= difference_a4:
-        return [16,17,average_R,average_G,average_B]
+        return [15,16,average_R,average_G,average_B]
         
     if difference_a3 >= difference_a1 and difference_a3 >= difference_a2 and difference_a3 >= difference_a4:
-        return [17,16,average_R,average_G,average_B] 
+        return [16,15,average_R,average_G,average_B] 
         
     if difference_a4 >= difference_a1 and difference_a4 >= difference_a2 and difference_a4 >= difference_a3:
-        return [17,17,average_R,average_G,average_B]  
+        return [16,16,average_R,average_G,average_B]  
 
 
 def another_middle_change_alter(img):
@@ -132,16 +132,16 @@ def another_middle_change_alter(img):
     difference_a4 =abs(a4[0]-average_R) + abs(a4[1] - average_G) + abs(a4[2] - average_B)
 
     if difference_a1 >= difference_a2 and difference_a1 >= difference_a3 and difference_a1 >= difference_a4:
-        return [16,16,255-average_R,255-average_G,255-average_B]
+        return [15,15,255-average_R,255-average_G,255-average_B]
         
     if difference_a2 >= difference_a1 and difference_a2 >= difference_a3 and difference_a2 >= difference_a4:
-        return [16,17,255-average_R,255-average_G,255-average_B]
+        return [15,16,255-average_R,255-average_G,255-average_B]
         
     if difference_a3 >= difference_a1 and difference_a3 >= difference_a2 and difference_a3 >= difference_a4:
-        return [17,16,255-average_R,255-average_G,255-average_B] 
+        return [16,15,255-average_R,255-average_G,255-average_B] 
         
     if difference_a4 >= difference_a1 and difference_a4 >= difference_a2 and difference_a4 >= difference_a3:
-        return [17,17,255-average_R,255-average_G,255-average_B]  
+        return [16,16,255-average_R,255-average_G,255-average_B]  
 
 
 def get_average(img):
