@@ -82,7 +82,6 @@ def another_middle_change(img):
             G.append(a[i][j][1])
             B.append(a[i][j][2])
 
-
     average_R = int(np.mean(R))
     average_G = int(np.mean(G))
     average_B = int(np.mean(B))
@@ -120,7 +119,6 @@ def another_middle_change_alter(img):
             R.append(a[i][j][0])
             G.append(a[i][j][1])
             B.append(a[i][j][2])
-
 
     average_R = int(np.mean(R))
     average_G = int(np.mean(G))
